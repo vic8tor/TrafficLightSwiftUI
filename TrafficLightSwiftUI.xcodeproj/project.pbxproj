@@ -11,6 +11,8 @@
 		57A9BDF627BCF19100400B45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9BDF527BCF19100400B45 /* ContentView.swift */; };
 		57A9BDF827BCF19300400B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A9BDF727BCF19300400B45 /* Assets.xcassets */; };
 		57A9BDFB27BCF19300400B45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A9BDFA27BCF19300400B45 /* Preview Assets.xcassets */; };
+		57A9BE0227BCF5C800400B45 /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9BE0127BCF5C800400B45 /* Lights.swift */; };
+		57A9BE0627BD1B6700400B45 /* ChangeColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9BE0527BD1B6700400B45 /* ChangeColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		57A9BDF527BCF19100400B45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57A9BDF727BCF19300400B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57A9BDFA27BCF19300400B45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57A9BE0127BCF5C800400B45 /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
+		57A9BE0527BD1B6700400B45 /* ChangeColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				57A9BDF327BCF19100400B45 /* TrafficLightSwiftUIApp.swift */,
 				57A9BDF527BCF19100400B45 /* ContentView.swift */,
+				57A9BE0527BD1B6700400B45 /* ChangeColorButton.swift */,
+				57A9BE0127BCF5C800400B45 /* Lights.swift */,
 				57A9BDF727BCF19300400B45 /* Assets.xcassets */,
 				57A9BDF927BCF19300400B45 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				57A9BDF627BCF19100400B45 /* ContentView.swift in Sources */,
 				57A9BDF427BCF19100400B45 /* TrafficLightSwiftUIApp.swift in Sources */,
+				57A9BE0227BCF5C800400B45 /* Lights.swift in Sources */,
+				57A9BE0627BD1B6700400B45 /* ChangeColorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
