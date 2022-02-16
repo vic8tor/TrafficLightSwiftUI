@@ -12,15 +12,18 @@ struct ChangeColorButton: View {
     let action: () -> Void
     
     var body: some View {
-        Button("START") {
-            
-        }
+        Button(action: action, label: {
+            Text(title)
+        })
+        .frame(
+            minWidth: 100,
+            maxWidth: .infinity,
+            minHeight: 65)
         .foregroundColor(.white)
-        .padding()
-        .background(RoundedRectangle(cornerRadius: 10).fill(Color.indigo))
+        .background(RoundedRectangle(cornerRadius: 20).fill(Color.indigo))
+        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white,lineWidth: 4))
         .font(.system(size: 35, weight: Font.Weight.bold))
-
-        
+        .padding([.leading, .trailing], 25)
     }
 }
 
