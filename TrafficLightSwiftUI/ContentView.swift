@@ -7,22 +7,44 @@
 
 import SwiftUI
 
+enum CurrentColor {
+    case red, yellow, green
+}
+
 struct ContentView: View {
-    enum CurrentColor {
-        case red, yellow, green
-    }
+    @State private var currentLight = CurrentColor.red
+    @State private var buttonTitle = "START"
+    @State private var redLightValue = 0.2
+    @State private var yellowLightValue = 0.2
+    @State private var greenLightValue = 0.2
     
     var body: some View {
         VStack(spacing: 20) {
-            Lights(color: .init(red: 178 / 255, green: 0, blue: 0, opacity: 0.5))
-                .tag(1)
-            Lights(color: .init(red: 101 / 255 , green: 57 / 255, blue: 33 / 255, opacity: 0.5))
-                .tag(2)
-            Lights(color: .init(red: 0, green: 58 / 255, blue: 0, opacity: 0.5))
-                .tag(3)
+            Lights(color: .red).opacity(redLightValue)
+
+            Lights(color: .yellow).opacity(yellowLightValue)
+
+            Lights(color: .green).opacity(greenLightValue)
             Spacer()
             
-
+            ChangeColorButton(title: buttonTitle, action: {
+                buttonTitle = "NEXT"
+                switch currentLight {
+                case .red:
+                    greenLightValue = 0.2
+                    redLightValue = 1
+                    currentLight = .yellow
+                case .yellow:
+                    redLightValue = 0.2
+                    yellowLightValue = 1
+                    currentLight = .green
+                default:
+                    yellowLightValue = 0.2
+                    greenLightValue = 1
+                    currentLight = .red
+                }
+            })
+                .padding()
         }
         .background(Color.black)
     }
